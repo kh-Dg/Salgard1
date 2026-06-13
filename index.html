@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes" />
+  <title>Loading...</title>
+  <link href="./style.css"  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- صفحه اسپلش - سورپرایز -->
+  <div class="splash-screen" id="splashScreen">
+    <div class="splash-bg-circle circle1"></div>
+    <div class="splash-bg-circle circle2"></div>
+    <div class="splash-bg-circle circle3"></div>
+    
+    <div class="splash-content">
+      <div class="splash-logo" id="splashLogo">✨</div>
+      <div class="splash-title">یک لحظه خاص</div>
+      <div class="splash-subtitle">برای تو...</div>
+      <button class="enter-btn" id="enterBtn">
+        <span>🔓</span> ادامه
+      </button>
+    </div>
+  </div>
+
+  <!-- صفحه اصلی (سالگرد) -->
+  <div class="main-page" id="mainPage">
+    <div class="falling-emojis" id="fallingContainer"></div>
+
+    <div class="card">
+      <div class="avatar">
+        <img src="./phtest.png" alt="عکس شما" id="profileImg">
+      </div>
+      <h1>سالگردمون مبارک عشق من ❤️</h1>
+      <div class="subtitle">✨ هر ثانیه کنار تو یه خاطره قشنگه ✨</div>
+
+      <div class="counter" id="timerDisplay">در حال محاسبه...</div>
+
+      <div class="message-box" id="loveMessage"></div>
+
+      <div class="buttons-container">
+        <button class="music-btn" id="playPauseBtn"><span>🎵</span> پخش موزیک</button>
+        <button class="voice-btn" id="voiceMessageBtn"><span>🎤</span> پیام من</button>
+      </div>
+      <div class="footer">با تمام وجودم ساخته شده برای تو ❤️</div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="./Aron Afshar - Havato Daram Eshgh.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="voiceMessage" preload="auto">
+    <source src="./my_voice.ogg" type="audio/ogg">
+    <source src="./my_voice.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="./main.js"></script>
+</body>
+</html>
